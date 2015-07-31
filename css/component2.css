@@ -20,23 +20,25 @@ body {
 .component {
 	position: relative;
 	margin-bottom: 3em;
-	height: 15em;
-	background: rgba(0,0,0,0.05);
+	height: 10em;
+	background: rgba(256,256,256,0.3);
 	font-family: 'Lato', Arial, sans-serif;
 }
 
 .component > h2 {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
 	white-space: nowrap;
-	font-weight: 300;
+	font-weight: 800;
 	font-style: italic;
-	font-size: 10em;
-	opacity: 0.1;
+	font-size: 4em;
+	opacity: 0.2;
 	cursor: default;
+	color:#bc566e;
 }
 
 .cn-button {
