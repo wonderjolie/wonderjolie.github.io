@@ -131,10 +131,10 @@
 	width: 14.5em;
 	height: 14.5em;
 	border-radius: 50%;
-	background: #dadd74;
-	background: -webkit-radial-gradient(transparent 35%, #dadd74 35%);
-	background: -moz-radial-gradient(transparent 35%, #dadd74 35%);
-	background: radial-gradient(transparent 35%, #dadd74 35%);
+	background: #dadd74 url('images/bg1.png');
+	background: -webkit-radial-gradient(transparent 35%  url('images/bg1.png'), #dadd74 35% url('images/bg1.png')) ;
+	background: -moz-radial-gradient(transparent 35%  url('images/bg1.png'), #dadd74 35% url('images/bg1.png'));
+	background: radial-gradient(transparent 35%  url('images/bg1.png'), #dadd74 35% url('images/bg1.png'));
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
@@ -161,9 +161,9 @@
 .csstransforms .cn-wrapper li a:hover,
 .csstransforms .cn-wrapper li a:active,
 .csstransforms .cn-wrapper li a:focus {
-	background: -webkit-radial-gradient(transparent 35%, #f5d2cc 35%);
-	background: -moz-radial-gradient(transparent 35%, #f5d2cc 35%);
-	background: radial-gradient(transparent 35%, #f5d2cc 35%);
+	background: -webkit-radial-gradient(transparent 35%  url('images/bg1.png'), #f5d2cc 35% url('images/bg1.png'));
+	background: -moz-radial-gradient(transparent 35%  url('images/bg1.png'), #f5d2cc 35% url('images/bg1.png'));
+	background: radial-gradient(transparent 35%  url('images/bg1.png'), #f5d2cc 35% url('images/bg1.png'));
 }
 
 .csstransforms .opened-nav li {
