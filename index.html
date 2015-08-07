@@ -81,7 +81,7 @@
 			var start_time = Date.now();
 
 			var windowHalfX = window.innerWidth / 2;
-			var windowHalfY = window.innerHeight / 2;
+			var windowHalfY = window.innerHeight / 4;
 
 			init();
 
@@ -94,7 +94,7 @@
 
 				var canvas = document.createElement( 'canvas' );
 				canvas.width = 32;
-				canvas.height = window.innerHeight;
+				canvas.height = window.innerHeight/2;
 
 				var context = canvas.getContext( '2d' );
 
@@ -110,7 +110,7 @@
 
 				//
 
-				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 3000 );
+				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight * 2, 1, 3000 );
 				camera.position.z = 6000;
 
 				scene = new THREE.Scene();
@@ -163,7 +163,7 @@
 				scene.add( mesh );
 
 				renderer = new THREE.WebGLRenderer( { antialias: false } );
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth, window.innerHeight/2 );
 				container.appendChild( renderer.domElement );
 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
@@ -180,10 +180,10 @@
 
 			function onWindowResize( event ) {
 
-				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.aspect = window.innerWidth / window.innerHeight *2;
 				camera.updateProjectionMatrix();
 
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth, window.innerHeight *2 );
 
 			}
 
