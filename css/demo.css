@@ -24,11 +24,7 @@ body {
 }
 
 .container{
-	height:50%;
-}
-.sky{
-	background:#FFF;
-	/*height:50%;*/
+	height:27em;
 }
 
 .container > header,
